@@ -10,6 +10,10 @@ except ImportError:
     import tkFont as tkfont  # python 2
 #Import Variable
 from path_icon import icon_path
+#Link
+import webbrowser
+def callback(url):
+    webbrowser.open_new(url)
 
 class Kilo_Antivirus(tk.Tk):
 
@@ -120,15 +124,16 @@ class Home(tk.Frame):
 
         #label2.pack()
 
-
+        
         button1 = tk.Button(self, bg="yellow" , text="Home", command=lambda: controller.show_frame("Home"), height = 5, width = 15 )
                             
-        button2 = tk.Button(self, bg="yellow" , text="Update", command=lambda: controller.show_frame("Update"), height = 5, width = 15 )
+        button2 = tk.Button(self, bg="yellow" , text="Update", height = 5, width = 15 )
 
         button3 = tk.Button(self, bg="yellow" , text="About", command=lambda: controller.show_frame("Info"), height = 5, width = 15 )
 
         button7 = tk.Button(self, bg="yellow" , text="Scan", command=lambda: controller.show_frame("Scan"), height = 5, width = 15 )
         
+        button2.bind("<Button-1>", lambda e: callback("https://github.com/harshsc2007/Kilo-Antivirus/releases"))
         button1.place(x=9,y=400)
         button2.place(x=159,y=400)
         button3.place(x=319,y=400)
@@ -172,12 +177,13 @@ class Scan(tk.Frame):
       
         button1 = tk.Button(self, bg="yellow" , text="Home", command=lambda: controller.show_frame("Home"), height = 5, width = 15 )
                             
-        button2 = tk.Button(self, bg="yellow" , text="Update", command=lambda: controller.show_frame("Update"), height = 5, width = 15 )
+        button2 = tk.Button(self, bg="yellow" , text="Update" , height = 5, width = 15 )
 
         button3 = tk.Button(self, bg="yellow" , text="About", command=lambda: controller.show_frame("Info"), height = 5, width = 15 )
 
         button7 = tk.Button(self, bg="yellow" , text="Scan", command=lambda: controller.show_frame("Scan"), height = 5, width = 15 )
         
+        button2.bind("<Button-1>", lambda e: callback("https://github.com/harshsc2007/Kilo-Antivirus/releases"))
         button1.place(x=9,y=400)
         button2.place(x=159,y=400)
         button3.place(x=319,y=400)
@@ -202,12 +208,13 @@ class Update(tk.Frame):
 
         button1 = tk.Button(self, bg="yellow" , text="Home", command=lambda: controller.show_frame("Home"), height = 5, width = 15 )
                             
-        button2 = tk.Button(self, bg="yellow" , text="Update", command=lambda: controller.show_frame("Update"), height = 5, width = 15 )
+        button2 = tk.Button(self, bg="yellow" , text="Update" , height = 5, width = 15 )
 
         button3 = tk.Button(self, bg="yellow" , text="About", command=lambda: controller.show_frame("Info"), height = 5, width = 15 )
 
         button7 = tk.Button(self, bg="yellow" , text="Scan", command=lambda: controller.show_frame("Scan"), height = 5, width = 15 )
         
+        button2.bind("<Button-1>", lambda e: callback("https://github.com/harshsc2007/Kilo-Antivirus/releases"))
         button1.place(x=9,y=400)
         button2.place(x=159,y=400)
         button3.place(x=319,y=400)
@@ -226,12 +233,13 @@ class Info(tk.Frame):
 
         button1 = tk.Button(self, bg="yellow" , text="Home", command=lambda: controller.show_frame("Home"), height = 5, width = 15 )
                             
-        button2 = tk.Button(self, bg="yellow" , text="Update", command=lambda: controller.show_frame("Update"), height = 5, width = 15 )
+        button2 = tk.Button(self, bg="yellow" , text="Update" , height = 5, width = 15 )
 
         button3 = tk.Button(self, bg="yellow" , text="About", command=lambda: controller.show_frame("Info"), height = 5, width = 15 )
 
         button7 = tk.Button(self, bg="yellow" , text="Scan", command=lambda: controller.show_frame("Scan"), height = 5, width = 15 )
         
+        button2.bind("<Button-1>", lambda e: callback("https://github.com/harshsc2007/Kilo-Antivirus/releases"))
         button1.place(x=9,y=400)
         button2.place(x=159,y=400)
         button3.place(x=319,y=400)
