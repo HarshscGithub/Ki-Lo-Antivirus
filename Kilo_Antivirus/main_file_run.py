@@ -119,7 +119,7 @@ class Home(tk.Frame):
         label8 = tk.Label(self, text=Total_days, font=("Italic", 14))
         label8.place(x=180,y=280)
 
-        label9 = tk.Label(self, bg="Green" , text="Version 0.41.2", height = 6, width = 30 )
+        label9 = tk.Label(self, bg="Green" , text="Version 0.9.7 ", height = 6, width = 30 )
         label9.place(x=370,y=0)
 
         #label2.pack()
@@ -219,17 +219,20 @@ class Update(tk.Frame):
         button2.place(x=159,y=400)
         button3.place(x=319,y=400)
         button7.place(x=479,y=400)
-
+        
+        button.pack()
 class Info(tk.Frame):
 
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.controller = controller
-        label = tk.Label(self, text="This is Info page.\nDevelopment is in progress.", font=controller.title_font)
+        label = tk.Label(self, text="About", font=controller.title_font)
         label.pack(side="top", fill="x", pady=10)
         button = tk.Button(self, text=" Home Page ",
                            command=lambda: controller.show_frame("Home"))
         
+        about = tk.Label(self, bg="lightGreen" , text="Copyright (C) 2021 harshsc2007 Ki-Lo - All Rights Reserved\nYou may use, distribute and modify this code,\nYou should write name  harshsc2007 GITHUB in source code.\nif your using your own then no need of putting my name,but\nif your doing publicity of my code modifed then you put my my name", height = 10, width = 56 )
+        about.place(x=100,y=150)
 
         button1 = tk.Button(self, bg="yellow" , text="Home", command=lambda: controller.show_frame("Home"), height = 5, width = 15 )
                             
