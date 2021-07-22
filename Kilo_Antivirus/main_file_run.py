@@ -134,7 +134,7 @@ class Home(tk.Frame):
         label8 = tk.Label(self, text=Total_days, font=("Italic", 14))
         label8.place(x=180,y=280)
 
-        label9 = tk.Label(self, bg="Green" , text="Version 0.9.7 ", height = 6, width = 30 )
+        label9 = tk.Label(self, bg="lightGreen" , text="Version 1.0.0.1 ", height = 6, width = 30 )
         label9.place(x=370,y=0)
 
         #label2.pack()
