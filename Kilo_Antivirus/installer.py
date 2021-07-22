@@ -19,7 +19,7 @@ root.geometry("500x400")
 photo = PhotoImage(file = icon_path)
 root.iconphoto(False, photo)
 
-root.title("Dashing + Kilo Antivirus")
+root.title("Kilo Antivirus Installer")
 root.title_font = tkfont.Font(family='Helvetica', size=18, weight="bold", slant="italic")
 # declaring string variable
 # for storing name and password
@@ -82,7 +82,7 @@ passw_entry=tk.Entry(root, textvariable = passw_var, font = ('calibre',15,'norma
 email_label = tk.Label(root, text = 'E-Mail:', font = ('calibre',20,'bold'))
 
 # creating a entry for email
-email_entry=tk.Entry(root, textvariable = email_var, font = ('calibre',10,'normal'))
+email_entry=tk.Entry(root, textvariable = email_var, font = ('calibre',15,'normal'))
 
 # creating a button using the widget
 # Button that will call the submit function
@@ -91,13 +91,13 @@ sub_btn=tk.Button(root, bg="yellow" , text="Sumbit", command=submit, height = 5,
 # placing the label and entry in
 # the required position using grid
 # method
-name_label.place(x=10,y=120)
-name_entry.place(x=130,y=120)
-passw_label.place(x=10,y=150)
-passw_entry.place(x=130,y=150)
-email_label.place(x=10,y=180)
-email_entry.place(x=130,y=180)
-sub_btn.place(x=20,y=280)
+name_label.place(x=10,y=130)
+name_entry.place(x=160,y=130)
+passw_label.place(x=10,y=160)
+passw_entry.place(x=160,y=160)
+email_label.place(x=10,y=190)
+email_entry.place(x=160,y=190)
+sub_btn.place(x=20,y=290
 
 # performing an infinite loop
 # for the window to display
