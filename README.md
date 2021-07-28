@@ -1,4 +1,4 @@
-# Kilo-Antivirus.
+# Kilo-Antivirus 1.
 
 **_Ki-Lo Antivirus_**. Next major version of **Dashing antivirus**.
 UI is completely changed. Code is nearly entirely re -written.
