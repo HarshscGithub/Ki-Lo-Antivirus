@@ -1,18 +1,29 @@
-# Kilo-Antivirus 1.
-
-**_Ki-Lo Antivirus_**. Next major version of **Dashing antivirus**.
-UI is completely changed. Code is nearly entirely re -written.
+### This is **Kilo Antivirus 2.0.0**.
 
 **This is main v1.0.0 Release**.
 ### **_Release Notes:_** 
-                                             1) Run installer.py 
-                                             2) Run main_file_run.py
-                                             3) Home : { User_Name, User_Password,  User_Email }
-                                             4) Update: {GitHub Releases, so that you can download an update}
-                                             5) About: { Python Dummy License } 
-                                             6) Scan :  {Quick Scan, Full Scan, Custom Scan}                                     
 
-**Upcoming Events: 1) Video on YouTube of Installation and use. Video on {Mac OS: 12, Windows: 11}**
 
-Please support this game by using it and sharing it.
-Name was inspired from LOKI.
+###  What's new (In short) :    
+
+                    UI Changes:   
+              
+                         1) MainUI 2.0.0
+                         2) InstallerUI 1.6.0
+                         3) HomeUI 1.0.0                    
+                         4) ScanUI 2.0.0
+                         5) AboutUI 1.6.0
+                         6) CentalUI 2.0.0
+
+                    New Features:
+                         1) Installer: Added purchase date option. When you download your subscription will be 365 days
+                         2) Main: All UI is redesigned
+                                     1) Home: This is entirely new window in Kilo Antivirus. 
+                                     2) About: About has new section of version name and date at when version was released.
+                                     3) Scan: Now you can scan in main file only. No need of another file.
+                                     4) User Info/Central : In User Info we added relative subscription days and todays date.                    
+###  Requirements: 
+                        pip install pillow
+### Upcoming events:
+                        Demonstration of Kilo-Antivirus setup on both windows 11 and MacOS 12
+### Please make this repository popular and give feedbacks as issues.                                
