@@ -18,10 +18,10 @@
                     New Features:
                          1) Installer: Added purchase date option. When you download your subscription will be 365 days
                          2) Main: All UI is redesigned
-                                     1) Home: This is entirely new window in Kilo Antivirus. 
-                                     2) About: About has new section of version name and date at when version was released.
-                                     3) Scan: Now you can scan in main file only. No need of another file.
-                                     4) User Info/Central : In User Info we added relative subscription days and todays date.                    
+                         3) Home: This is entirely new window in Kilo Antivirus. 
+                         4) About: About has new section of version name and date at when version was released.
+                         5) Scan: Now you can scan in main file only. No need of another file.
+                         6) User Info/Central : In User Info we added relative subscription days and todays date.                    
 ###  Requirements: 
                         pip install pillow
 ### Upcoming events:
