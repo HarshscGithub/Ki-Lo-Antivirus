@@ -1,7 +1,0 @@
-Copyright (C) 2021 harshsc2007 Ki-Lo - All Rights Reserved
-You may use, distribute and modify this code but
-you should write name of harshsc2007 GITHUB in source code
-if your using your own then no need of putting my name but 
-if your doing publicity of my code modifed then you put my
-name.
-
