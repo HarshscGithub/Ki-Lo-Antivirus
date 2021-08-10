@@ -3,6 +3,30 @@
 **This is main v1.0.0 Release**.
 ### **_Release Notes:_** 
 
+Ki-Lo Antivirus 2.0
+
+Release Date - 4/8/2021
+
+Product Overview
+
+UI versions: 
+
+1) MainUI 2.0.0
+2) Installer UI 1.6.0
+3) HomeUI 1.0.0                    
+4) ScanUI 2.0.0
+5) AboutUI 1.6.0
+6) CentalUI 2.0.0
+
+Features: 
+1) Installer: Date and Use Name and Password and todays date.
+2) Main: {Home, User_Name, User_Password,  User_Email }
+3) Home: Home includes navigation to all features in this version. 
+4) About: About has a dummy license and version History.
+5) Scan: Scan include 3 buttons {Quick scan, Full scan, Custom scan}
+6) User Info/Central : Here are the details of the user, remaining days of subscription an todays date.
+
+
 
 ###  What's new (In short) :    
 
