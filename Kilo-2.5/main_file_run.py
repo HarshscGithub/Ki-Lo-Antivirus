@@ -46,7 +46,7 @@ class Kilo_Antivirus(tk.Tk):
         photo = PhotoImage(file = icon_path)
         self.iconphoto(False, photo)
 
-        self.title("Kilo 2.0 Antivirus")
+        self.title("Kilo 2.5 Antivirus")
         self.title_font = tkfont.Font(family='Cursive', size=18, weight="bold", slant="italic")
 
         # the container is where we'll stack a bunch of frames
@@ -230,7 +230,7 @@ class Home(tk.Frame):
         tk.Frame.__init__(self, parent)
         self.controller = controller
 
-        label_head = tk.Label(self, bg="Pink" , text="Kilo 2.5.1 Antvirus", font=("Courier", 14), height = 2, width = 53 )
+        label_head = tk.Label(self, bg="Pink" , text="Kilo 2.5.1 Antivirus", font=("Courier", 14), height = 2, width = 53 )
         label2 = tk.Label(self, bg="CYAN" , text="Home", font=("Courier", 14), height = 2, width = 13 )   
      
         button2 = tk.Button(self, bg="lightgreen" , text="Update", height = 5, width = 25 )
@@ -239,17 +239,17 @@ class Home(tk.Frame):
 
         button7 = tk.Button(self, bg="lightpink" , text="Scan", command=lambda: controller.show_frame("Scan"), height = 5, width = 25 )
         
-        button8 = tk.Button(self, bg="lightblue" , text="Kilo 2.0 Central", command=lambda: controller.show_frame("User_info"), height = 12, width = 25 )
+        button8 = tk.Button(self, bg="lightblue" , text="Kilo 2.5 Central", command=lambda: controller.show_frame("User_info"), height = 12, width = 25 )
 
         button9 = tk.Button(self, bg="lightblue" , text="feedback", command=lambda: controller.show_frame("Feedback"), height = 5, width = 25 )
 	
         button2.bind("<Button-1>", lambda e: callback("https://github.com/harshsc2007/Kilo-Antivirus/releases"))
-
+         
         label89 = tk.Label(self, bg="orange" , text=str(date.today()), height = 5, width = 25)
-        label90 = tk.Label(self, bg="Lightblue" , text="Made by Harsh Chaudari", height = 5, width = 25)
-        label89.place(x= 1, y=330)
-        label90.place(x=400 ,y =330)
-        label2.place(x=220,y=60)
+        label90 = tk.Label(self, bg="Lightblue" , text="Made by Harsh Chaudhari", height = 5, width = 25)
+        label89.place(x= 5, y=330)
+        label90.place(x=405 ,y =330)
+        label2.place(x=5,y=60)
         label_head.place(x=5,y=10)
         button2.place(x=205,y=115)
         button3.place(x=205,y=210)
@@ -354,7 +354,7 @@ class Info(tk.Frame):
         about = tk.Label(self, bg="lightGreen" , text="No-Copyright (C) 2021 harshsc2007 Ki-Lo - All Rights Reserved\nYou may use, distribute and modify this code,\nYou should write name  harshsc2007 GITHUB in source code.\nif your using your own then no need of putting my name,but\nif your doing publicity of my code modifed then you put my my name", height = 10, width = 56 )
         about.place(x=140,y=90)
         
-        history = tk.Label(self, bg="coral" , text="Release History of Kilo 2.0.0\n\nKilo 2.0 main release :4-08-2021 \nKilo 2.0 Pre-Build 2 : 1-08-2021\nKilo 2.0 Pre-Build 1 : 30-07-2021", font=("Courier", 13) ,height = 8, width = 38 )
+        history = tk.Label(self, bg="coral" , text="Release History of Kilo 2.0\n\nKilo 2.5.1 2nd release :13-08-2021 \nKilo 2.0 main release :4-08-2021 \nKilo 2.0 Pre-Build 2 : 30-087-2021\nKilo 2.0 Pre-Build 1 : 29-07-2021", font=("Courier", 13) ,height = 8, width = 38 )
         history.place(x=140,y=290)
 
         button1 = tk.Button(self, bg="yellow" , text="Home", command=lambda: controller.show_frame("Home"), height = 5, width = 15 )
@@ -388,8 +388,8 @@ class Feedback(tk.Frame):
         #String
         ab = StringVar(self, value="")
         feedback = Entry(self,textvariable=ab)
-        feedback.place(x=20,y=40)
-        feedback.place(height=340, width=560)
+        feedback.place(x=130,y=40)
+        feedback.place(height=340, width=400)
         #Sumbit Button
         def submit():
             import smtplib, ssl
@@ -409,9 +409,25 @@ class Feedback(tk.Frame):
                 server.sendmail(sender_email, receiver_email, message)
 
 
-        sumbit_btn = tk.Button(self, bg="yellow" , text="Send Feedback", command= submit, height = 4, width = 20 )
-        sumbit_btn.place(x=20,y= 400)
+        sumbit_btn = tk.Button(self, bg="cyan" , text="Send Feedback", command= submit, height = 4, width = 20 )
+        sumbit_btn.place(x=130,y= 400)
+
+        button1 = tk.Button(self, bg="yellow" , text="Home", command=lambda: controller.show_frame("Home"), height = 5, width = 15 )
+                            
+        button2 = tk.Button(self, bg="yellow" , text="Update", height = 5, width = 15 )
+
+        button3 = tk.Button(self, bg="yellow" , text="About", command=lambda: controller.show_frame("Info"), height = 5, width = 15 )
+
+        button7 = tk.Button(self, bg="yellow" , text="Scan", command=lambda: controller.show_frame("Scan"), height = 5, width = 15 )
         
+        button8 = tk.Button(self, bg="yellow" , text="User Info", command=lambda: controller.show_frame("User_info"), height = 4, width = 15 )
+	
+        button2.bind("<Button-1>", lambda e: callback("https://github.com/harshsc2007/Kilo-Antivirus/releases"))
+        button1.place(x=5,y=10)
+        button2.place(x=5,y=105)
+        button3.place(x=5,y=205)
+        button7.place(x=5,y=305) 
+        button8.place(x=5,y=405)
         
         
 
