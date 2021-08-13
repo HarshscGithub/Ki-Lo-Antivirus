@@ -149,7 +149,7 @@ class User_info(tk.Frame):
         label8 = tk.Label(self, text=Total_days, font=("Italic", 14))
         label8.place(x=380,y=280)
 
-        label9 = tk.Label(self, bg="lightblue" , text="Version 2.0.0", height = 6, width = 30 )
+        label9 = tk.Label(self, bg="lightblue" , text="Version 2.5.1", height = 6, width = 30 )
         label9.place(x=370,y=400)
 	
 	
@@ -230,7 +230,7 @@ class Home(tk.Frame):
         tk.Frame.__init__(self, parent)
         self.controller = controller
 
-        label_head = tk.Label(self, bg="Pink" , text="Kilo 2.0.0 Antvirus", font=("Courier", 14), height = 2, width = 53 )
+        label_head = tk.Label(self, bg="Pink" , text="Kilo 2.5.1 Antvirus", font=("Courier", 14), height = 2, width = 53 )
         label2 = tk.Label(self, bg="CYAN" , text="Home", font=("Courier", 14), height = 2, width = 13 )   
      
         button2 = tk.Button(self, bg="lightgreen" , text="Update", height = 5, width = 25 )
