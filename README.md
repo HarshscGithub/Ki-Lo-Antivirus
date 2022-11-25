@@ -1,11 +1,11 @@
-### This is **Kilo Antivirus 2.0.0**.
+### This is **Kilo Antivirus 2.5.3**.
 
 **This is main v1.0.0 Release**.
 ### **_Release Notes:_** 
 
-Ki-Lo Antivirus 2.0
+Ki-Lo Antivirus 2.5.3
 
-Release Date - 4/8/2021
+Release Date - 25/11/2022
 
 Product Overview
 
@@ -16,7 +16,7 @@ UI versions:
 3) HomeUI 1.0.0                    
 4) ScanUI 2.0.0
 5) AboutUI 1.6.0
-6) CentalUI 2.0.0
+6) CentralUI 2.0.0
 
 Features: 
 1) Installer: Date and Use Name and Password and todays date.
@@ -47,7 +47,11 @@ Features:
                          5) Scan: Now you can scan in main file only. No need of another file.
                          6) User Info/Central : In User Info we added relative subscription days and todays date.                    
 ###  Requirements: 
-                        pip install pillow
-### Upcoming events:
-                        Demonstration of Kilo-Antivirus setup on both windows 11 and MacOS 12
+                        pip install pillow==9.0.0
+                        python -m smtpd -c DebuggingServer -n localhost:1025
+## VIDEOS
+### (Windows11) (https://www.youtube.com/watch?v=QqRfN2T9n2s0
+### (MacOS 12) (https://www.youtube.com/watch?v=94fISlYAKOE)
+
+
 ### Please make this repository popular and give feedbacks as issues.                                
