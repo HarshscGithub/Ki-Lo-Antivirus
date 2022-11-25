@@ -398,7 +398,7 @@ class Feedback(tk.Frame):
             smtp_server = "smtp.gmail.com"
             sender_email = "harshantivirus2@gmail.com"  # Enter your address
             receiver_email = email  # Enter receiver address
-            password = "@Harsh123"
+            password = "gpmohnfvtaxlrglu"
             SUBJECT = "FeedBack from" +" "+ email
             message = 'Subject: {}\n\n{}'.format(SUBJECT, feedback.get())
             from tkinter import messagebox
